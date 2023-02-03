@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  transition: ease-in-out;
+}
+
+#root {
+  padding: 4rem 0;
+}
+
+body {
+  background: url('./assets/background.jpg');
+  background-size: initial;
+}
+
+.container-glass {
+  background: url(LARGE_STAINS_01_8_bits.png), rgba(255, 255, 255, 0.3);
+  background-blend-mode: soft-light, normal;
+  box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.2), inset 0px -4px 2px rgba(0, 0, 0, 0.2), inset 0px 4px 2px rgba(255, 255, 255, 0.12), inset 4px 4px 26px rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  height: 90vh;
+  width: 90vw;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.container-form{
+  display: flex;
+}
+
+.movie-image{
+  width: min(100%, 250px);
+  height: min(100%, 250px);
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.movie-form{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 2rem;
+  gap: 1rem;
+}
+
+.input-text, 
+.submit-btn{
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.title{
+  color: white;
+  font-size: 45px;
+  margin-top: 2rem;
+}
+
+.movie-catalog{
+  display: flex;
+  margin-top: 1rem;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.movie-card{
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+
+  &__image{
+    width: 100%;
+    height: 282px;
+    object-fit: cover;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+  
+  &__name{
+    color: white;
+    padding-bottom: .5rem;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(21px);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius:  1rem;
+    padding-top: 1rem;
+    min-height: 75px;
+  }
+
+  &__date{
+    position: absolute;
+    color: white;
+    bottom: 6rem;
+  }
+}
